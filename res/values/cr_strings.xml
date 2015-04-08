@@ -362,45 +362,6 @@
     <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
     <string name="listview_bounce_interpolator">Bounce</string>
 
-    <!-- Screen recorder -->
-    <string name="screen_recorder_title">Screen recorder</string>
-    <string name="screen_recorder_summary">Adjust screen recorder settings</string>
-    <string name="screen_recorder_video_dimensions_title">Video size</string>
-    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
-    <!-- video sizes -->
-    <string name="screen_recorder_size_240x400">240x400</string>
-    <string name="screen_recorder_size_360x640">360x640</string>
-    <string name="screen_recorder_size_480x800">480x800</string>
-    <string name="screen_recorder_size_480x854">480x854</string>
-    <string name="screen_recorder_size_540x960">540x960</string>
-    <string name="screen_recorder_size_600x1024">600x1024</string>
-    <string name="screen_recorder_size_720x1280">720x1280</string>
-    <!-- frame rates -->
-    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
-    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
-    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
-    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
-    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
-    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
-    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
-    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
-    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
-    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
-    <string name="screen_recorder_bitrate_100000">100000</string>
-    <string name="screen_recorder_bitrate_250000">250000</string>
-    <string name="screen_recorder_bitrate_500000">500000</string>
-    <string name="screen_recorder_bitrate_1000000">1000000</string>
-    <string name="screen_recorder_bitrate_2000000">2000000</string>
-    <string name="screen_recorder_bitrate_3000000">3000000</string>
-    <string name="screen_recorder_bitrate_4000000">4000000</string>
-    <string name="screen_recorder_bitrate_5000000">5000000</string>
-    <string name="screen_recorder_bitrate_10000000">10000000</string>
-    <string name="screen_recorder_bitrate_20000000">20000000</string>
-    <string name="power_menu_screenrecord_title">Screen record</string>
-    <string name="screen_recorder_record_audio_title">External audio</string>
-    <string name="screen_recorder_record_audio_summary">Record audio from the microphone</string>
-    <string name="screen_recorder_power_menu_summary">Add a Screen Record entry in the power menu</string>
-
     <!-- Restart SystemUI -->
     <string name="restart_systemui">Restart SystemUI</string>
 
@@ -709,5 +670,17 @@
     <!-- Long press on lock screen lock icon to sleep -->
     <string name="longpress_lock_icon_to_sleep_title">Long press lock icon to sleep</string>
     <string name="longpress_lock_icon_to_sleep_summary">This option will not work if both smart lock and accessibility touch exploration are enabled</string>
+
+    <!-- Quick Settings -->
+    <string name="qs_screenshot_tile">Screenshot</string>
+    <string name="qs_screenrecord_tile">Screenrecord</string>
+    <string name="qs_sync_tile">Sync</string>
+    <string name="qs_tile_powermenu">Power Menu</string>
+    <string name="qs_battery_saver_tile">Battery saver</string>
+    <string name="qs_brightness_tile">Brightness</string>
+    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
+    <string name="qs_notifications_tile">Notifications</string>
+    <string name="qs_screen_off_tile">Screen off</string>
+    <string name="qs_tile_reboot">Reboot</string>
 
 </resources>
