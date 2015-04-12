@@ -775,10 +775,6 @@
     <string name="tether_user_network_default">Use System Default</string>
     <string name="tether_wifi_network_text">WiFi Tether Network</string>
 
-    <!-- Battery saver -->
-    <string name="battery_saver_title">Warning color</string>
-    <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
-
     <!-- Alarms and no interrupt zen mode -->
     <string name="zen_mode_none_category">No interruptions</string>
     <string name="zen_mode_alarms">Allow alarms</string>
