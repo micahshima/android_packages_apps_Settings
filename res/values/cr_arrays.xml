@@ -567,4 +567,152 @@
         <item>@string/status_bar_date_format_custom</item>
     </string-array>
 
+    <!-- Less notification sounds -->
+    <string-array name="less_notification_sounds_entries">
+        <item>@string/less_notification_sounds_default</item>
+        <item>@string/less_notification_sounds_3s</item>
+        <item>@string/less_notification_sounds_5s</item>
+        <item>@string/less_notification_sounds_10s</item>
+        <item>@string/less_notification_sounds_15s</item>
+        <item>@string/less_notification_sounds_30s</item>
+        <item>@string/less_notification_sounds_45s</item>
+        <item>@string/less_notification_sounds_1m</item>
+        <item>@string/less_notification_sounds_2m</item>
+        <item>@string/less_notification_sounds_5m</item>
+    </string-array>
+
+    <string-array name="less_notification_sounds_values" translatable="false">
+        <item>0</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+    </string-array>
+
+    <!-- Doze pulse (ambient display) options -->
+    <string-array name="doze_pulse_duration_in_entries" translatable="false">
+        <item>@string/twohundred_ms</item>
+        <item>@string/fivehundred_ms</item>
+        <item>@string/one_second_default</item>
+        <item>@string/onehalf_second</item>
+        <item>@string/two_second</item>
+    </string-array>
+
+    <string-array name="doze_pulse_duration_in_values" translatable="false">
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="doze_pulse_duration_visible_entries" translatable="false">
+        <item>@string/one_second</item>
+        <item>@string/onehalf_second</item>
+        <item>@string/two_second</item>
+        <item>@string/twohalf_second</item>
+        <item>@string/three_second_default</item>
+        <item>@string/threehalf_second</item>
+        <item>@string/four_second</item>
+        <item>@string/fourhalf_second</item>
+        <item>@string/five_second</item>
+    </string-array>
+
+    <string-array name="doze_pulse_duration_visible_values" translatable="false">
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="doze_shake_acc_threshold_entries" translatable="false">
+        <item>@string/veryeasy_shake</item>
+        <item>@string/easy_shake</item>
+        <item>@string/medium_shake</item>
+        <item>@string/hard_shake</item>
+        <item>@string/veryhard_shake</item>
+        <item>@string/strong_shake</item>
+    </string-array>
+
+    <string-array name="doze_shake_acc_threshold_values" translatable="false">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>13</item>
+        <item>16</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="doze_list_mode_entries" translatable="false">
+        <item>@string/fully_mode</item>
+        <item>@string/pocket_shake_mode</item>
+        <item>@string/pocket_pulse_mode</item>
+        <item>@string/pocket_only_mode</item>
+        <item>@string/shake_pulse_mode</item>
+        <item>@string/pulse_only_mode</item>
+    </string-array>
+
+    <string-array name="doze_list_mode_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- Overflow button -->
+    <string-array name="overflow_button_entries" translatable="false">
+        <item>@string/overflow_auto_detect</item>
+        <item>@string/overflow_hide</item>
+        <item>@string/overflow_show</item>
+    </string-array>
+
+    <string-array name="overflow_button_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Network Tether -->
+    <!-- List of user selectable networks to override defaults where necessary.
+         In some instances default tether networks conflict with other routed
+         networks, e.g., OpenVPN routed setups. This allows the user to select
+         other networks to override the defaults built in to either config.xml
+         or Tethering.java -->
+    <string-array translatable="false" name="tether_user_networks_entries">
+        <item>Use System Default</item>
+        <item>192.168.208.0/24</item>
+        <item>192.168.209.0/24</item>
+        <item>192.168.210.0/24</item>
+        <item>172.48.21.0/24</item>
+        <item>172.48.22.0/24</item>
+        <item>172.48.23.0/24</item>
+        <item>172.49.21.0/24</item>
+        <item>172.49.22.0/24</item>
+        <item>172.49.23.0/24</item>
+        <item>172.50.21.0/24</item>
+        <item>172.50.22.0/24</item>
+        <item>172.50.23.0/24</item>
+        <item>10.208.21.0/24</item>
+        <item>10.208.22.0/24</item>
+        <item>10.208.23.0/24</item>
+        <item>10.209.21.0/24</item>
+        <item>10.209.22.0/24</item>
+        <item>10.209.23.0/24</item>
+        <item>10.210.21.0/24</item>
+        <item>10.210.22.0/24</item>
+        <item>10.210.23.0/24</item>
+    </string-array>
+
 </resources>

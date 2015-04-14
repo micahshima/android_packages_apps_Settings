@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-   <string name="temasek_version_default">V9.5</string>
+   <string name="temasek_version_default">V9.8</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>
@@ -434,9 +434,6 @@
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="profile_applist_title">Applications</string>
 
-    <!-- Battery saver -->
-    <string name="battery_saver_title">Warning color</string>
-
     <!-- App Circle sidebar -->
     <string name="category_app_circle_bar_title">App launcher</string>
     <string name="app_circle_bar_title">App circle bar</string>
@@ -669,6 +666,7 @@
     <string name="qs_notifications_tile">Notifications</string>
     <string name="qs_screen_off_tile">Screen off</string>
     <string name="qs_tile_reboot">Reboot</string>
+    <string name="qs_usb_tether_tile">USB Tethering</string>
 
     <!-- Smart cover -->
     <string name="smart_cover_title">Smart cover</string>
@@ -677,5 +675,116 @@
     <string name="lid_controls_sleep_summary">Turn screen off when lid closes</string>
     <string name="lid_controls_wake_title">Control wake</string>
     <string name="lid_controls_wake_summary">Turn screen on when lid opens</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
+    <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
+
+    <!-- Less Notification sounds -->
+    <string name="notifications_category_title">Notifications</string>
+    <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+    <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+    <string name="less_notification_sounds_default">Default Behaviour</string>
+    <string name="less_notification_sounds_3s">3 seconds</string>
+    <string name="less_notification_sounds_5s">5 seconds</string>
+    <string name="less_notification_sounds_10s">10 seconds</string>
+    <string name="less_notification_sounds_15s">15 seconds</string>
+    <string name="less_notification_sounds_30s">30 seconds</string>
+    <string name="less_notification_sounds_45s">45 seconds</string>
+    <string name="less_notification_sounds_1m">1 minute</string>
+    <string name="less_notification_sounds_2m">2 minutes</string>
+    <string name="less_notification_sounds_5m">5 minutes</string>
+
+    <!-- Volume Keys Media Control -->
+    <string name="volume_keys_control_media_stream">Media control</string>
+    <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+
+    <!-- Doze pulse (ambient display) options -->
+    <string name="doze_overwrite_value_title">Overwrite value</string>
+    <string name="doze_overwrite_value_summary">Allow to overwrite default value with user config</string>
+
+    <string name="doze_list_mode_title">Doze mode</string>
+    <string name="doze_list_mode_summary">Option to configure doze mode</string>
+
+    <string name="doze_pulse_title">Time settings</string>
+    <string name="doze_pulse_duration_in_title">Fade in</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+
+    <string name="doze_pulse_duration_visible_title">Visible duration</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+
+    <string name="doze_pulse_duration_out_title">Fade out</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+
+    <string name="doze_pulse_on_notifications_title">Pulse doze</string>
+    <string name="doze_pulse_on_notifications_summary">Pulse display on pending notifications</string>
+
+    <string name="doze_shake_title">Shake settings</string>
+    <string name="doze_shake_mode_title">Shake mode</string>
+    <string name="doze_shake_mode_summary">Use shake sensor value to trigger activation</string>
+    <string name="doze_shake_mode_test_summary">Do you want to test shake sensor?</string>
+    <string name="doze_shake_mode_test_result">Apply current value?</string>
+    <string name="doze_shake_test">Shake your device now</string>
+    <string name="doze_shake_it">Shake detected!</string>
+
+    <string name="doze_shake_acc_threshold_title">Shake threshold</string>
+    <string name="doze_shake_acc_threshold_summary">Configure shake strength required to trigger activation</string>
+
+    <string name="doze_time_mode_title">Show clock and date</string>
+    <string name="doze_time_mode_summary">Force showing time when there is no notification</string>
+
+    <string name="twohundred_ms">200 ms</string>
+    <string name="fivehundred_ms">500 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="one_second_default">1 s (default)</string>
+    <string name="onehalf_second">1.5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2.5 s</string>
+    <string name="three_second">3 s</string>
+    <string name="three_second_default">3 s (default)</string>
+    <string name="threehalf_second">3.5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4.5 s</string>
+    <string name="five_second">5 s</string>
+
+    <string name="veryeasy_shake">Very easy</string>
+    <string name="easy_shake">Easy</string>
+    <string name="medium_shake">Default</string>
+    <string name="hard_shake">Hard</string>
+    <string name="veryhard_shake">Very hard</string>
+    <string name="strong_shake">Strong</string>
+
+    <string name="fully_mode">Full mode</string>
+    <string name="pocket_shake_mode">Pocket and shake</string>
+    <string name="pocket_pulse_mode">Pocket and pulse</string>
+    <string name="pocket_only_mode">Pocket</string>
+    <string name="shake_pulse_mode">Shake and pulse</string>
+    <string name="pulse_only_mode">Pulse (default)</string>
+
+    <!-- Overflow button -->
+    <string name="keys_overflow_title">Overflow button</string>
+    <string name="keys_overflow_toast">The action overflow button may not be visible or hidden until apps are restarted</string>
+    <string name="overflow_auto_detect">Auto detect</string>
+    <string name="overflow_show">Show</string>
+    <string name="overflow_hide">Hide</string>
+
+    <!-- User Selectable Tether Networks-->
+    <string name="tether_usb_network_summary">Press to change USB Network</string>
+    <string name="tether_usb_network_text">USB Tether Network</string>
+    <string name="tether_user_network_default">Use System Default</string>
+    <string name="tether_wifi_network_text">WiFi Tether Network</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_title">Warning color</string>
+    <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
+
+    <!-- Alarms and no interrupt zen mode -->
+    <string name="zen_mode_none_category">No interruptions</string>
+    <string name="zen_mode_alarms">Allow alarms</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">Disable FC Notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
 
 </resources>

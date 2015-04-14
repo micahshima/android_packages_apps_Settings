@@ -201,6 +201,7 @@
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
     <string name="power_menu_profiles_disabled">System profiles are disabled</string>
+    <string name="powermenu_screenshot_delay_title">Set screenshot delay</string>
 
     <!-- Backlight brightness settings screen -->
     <string name="adaptive_backlight_title">Adaptive backlight</string>
@@ -1060,6 +1061,8 @@
     <string name="qs_advanced_location_title">Advanced location settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in Quick Settings</string>
 
+    <string name="sim_no_number_set">No number assigned</string>
+
     <!-- Gesture Settings -->
     <!-- Settings main menu entry -->
     <string name="gesture_settings_title">Gestures</string>
@@ -1187,8 +1190,4 @@
     <string name="live_display_low_power_summary">Adjust display for lowest power consumption without degradation</string>
     <string name="live_display_enhance_color_title">Enhance colors</string>
     <string name="live_display_enhance_color_summary">Improve color vibrance of flesh tones, scenery, and other images</string>
-
-    <string name="battery_saver_threshold">Battery saver threshold</string>
-    <string name="battery_saver_summary">Reduce performance and limit background data</string>
-    <string name="battery_saver_summary_unavailable">Not available while charging</string>
 </resources>
