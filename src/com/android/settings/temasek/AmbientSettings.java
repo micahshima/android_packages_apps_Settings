@@ -47,8 +47,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 import com.android.settings.temasek.sensor.ShakeSensorManager;
-import com.android.settings.euphoria.SeekBarPreference;
-import com.android.settings.euphoria.ambientdisplay.ShakeSensorManager;
+import com.android.settings.temasek.SeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;
