@@ -8,7 +8,7 @@
     <string name="temasek_version_default">V10.1</string>
 
     <!-- temasek spare parts -->
-    <string name="temasek_settings_title">Temasek spare parts</string>
+    <string name="temasek_settings_title">Spare parts</string>
     <string name="recents_panel_title">Recents panel</string>
     <string name="recents_panel_settings">Recents panel settings</string>
     <string name="screen_and_animations_title">Screen and animations</string>
@@ -22,7 +22,7 @@
     <string name="disabled">Disabled</string>
     <string name="ok">Ok</string>
     <string name="reset_message">Reset all entries to default?</string>
-    <string name="extras_temasek_settings">Temasek Extras</string>
+    <string name="extras_temasek_settings">Extras</string>
 
     <!-- Changelog -->
     <string name="changelog_temasek_title">Changelog</string>
@@ -502,9 +502,8 @@
     <string name="position_right_title">Right</string>
     <string name="position_centered_title">Centered</string>
     <string name="hidden_title">Hidden</string>
-    <string name="dlg_reset_values_message">Reset values to\nAndroid- or temasek default?</string>
+    <string name="dlg_reset_values_message">Reset values to Android default?</string>
     <string name="dlg_reset_android">Android</string>
-    <string name="dlg_reset_temasek">temasek</string>
 
     <!-- Privacy guard notification -->
     <string name="privacy_guard_notification_title">Notification</string>
