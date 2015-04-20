@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">V10.1</string>
+    <string name="temasek_version_default">V10.2</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Spare parts</string>
@@ -764,5 +764,10 @@
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
-    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+
+    <!-- Status bar ticker -->
+    <string name="status_bar_ticker_title">Notification Ticker</string>
+    <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
+
 </resources>
