@@ -89,4 +89,8 @@
 
     <!-- The default value of whether to check "Show password" in the WiFi AP dialog -->
     <bool name="config_showWifiApPasswordDefault">false</bool>
+
+    <!-- Display ro.product.name above Device model -->
+    <bool name="config_displayDeviceName">false</bool>
+
 </resources>
