@@ -758,10 +758,6 @@
     <string name="tether_user_network_default">Use System Default</string>
     <string name="tether_wifi_network_text">WiFi Tether Network</string>
 
-    <!-- Alarms and no interrupt zen mode -->
-    <string name="zen_mode_none_category">No interruptions</string>
-    <string name="zen_mode_alarms">Allow alarms</string>
-
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
     <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
