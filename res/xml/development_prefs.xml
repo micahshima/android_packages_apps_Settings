@@ -22,10 +22,12 @@
             android:title="@string/development_tools_title"
             android:persistent="false" />
 
+<!--
     <com.android.settings.BugreportPreference
             android:key="bugreport"
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
+-->
 
     <SwitchPreference
         android:key="advanced_reboot"
@@ -88,10 +90,12 @@
         android:entries="@array/root_access_entries"
         android:entryValues="@array/root_access_values" />
 
+<!--
     <SwitchPreference
         android:key="update_recovery"
         android:title="@string/update_recovery_title"
         android:summary="@string/update_recovery_summary" />
+-->
 
     <Preference android:key="restart_systemui"
         android:title="@string/restart_systemui" />
@@ -135,10 +139,12 @@
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
 
+<!--
         <SwitchPreference
             android:key="bugreport_in_power"
             android:title="@string/bugreport_in_power"
             android:summary="@string/bugreport_in_power_summary"/>
+-->
 
         <SwitchPreference
             android:key="allow_mock_location"
