@@ -91,7 +91,6 @@ import com.android.settings.deviceinfo.UsbSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.livedisplay.LiveDisplay;
 import com.android.settings.lockscreen.LockScreenSettings;
-import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.cyanogenmod.qs.QSTiles;
 import com.android.settings.notification.NotificationAppList;
 import com.android.settings.notification.NotificationManagerSettings;
@@ -330,7 +329,6 @@ public class SettingsActivity extends Activity
             LockScreenSettings.class.getName(),
             LiveDisplay.class.getName(),
             QSTiles.class.getName(),
-            DisplayRotation.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
             AmbientSettings.class.getName(),
             DisplayRotation.class.getName()
