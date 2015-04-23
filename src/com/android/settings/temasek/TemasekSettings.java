@@ -14,8 +14,6 @@ public class TemasekSettings extends SettingsPreferenceFragment implements
 
     private static final String TAG = "TemasekSettings";
 
-    private Preference mHeadsUp;
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
