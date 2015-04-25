@@ -57,7 +57,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.temasek_display_settings);
+        addPreferencesFromResource(R.xml.display);
 
         mContext = getActivity().getApplicationContext();
         int newDensityValue;
