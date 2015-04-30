@@ -24,6 +24,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import static android.hardware.CmHardwareManager.FEATURE_TAP_TO_WAKE;
+import static android.provider.Settings.Secure.DOZE_ENABLED;
 import static android.provider.Settings.Secure.WAKE_GESTURE_ENABLED;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
@@ -42,6 +43,7 @@ import android.content.SharedPreferences;
 import android.hardware.CmHardwareManager;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.os.AsyncTask;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
@@ -58,6 +60,7 @@ import android.preference.SwitchPreference;
 import android.preference.TwoStatePreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.util.DisplayMetrics;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -86,10 +89,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
+
+    private static final String KEY_DOZE = "doze";
+    private static final String KEY_DOZE_FRAGMENT = "doze_fragment";
+
     private static final String KEY_NOTIFICATION_LIGHT = "notification_light";
     private static final String KEY_BATTERY_LIGHT = "battery_light";
 
-    private static final String KEY_DOZE_FRAGMENT = "doze_fragment";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -102,10 +108,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private Preference mScreenSaverPreference;
     private SwitchPreference mAccelerometer;
     private SwitchPreference mLiftToWakePreference;
+    private SwitchPreference mDozePreference;
+    private PreferenceScreen mDozeFragement;
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mTapToWake;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
-    private PreferenceScreen mDozeFragement;
 
     private CmHardwareManager mCmHardwareManager;
 
@@ -186,9 +193,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
+        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+        if (mDozePreference != null && Utils.isDozeAvailable(activity)) {
+            mDozePreference.setOnPreferenceChangeListener(this);
+        } else {
+            if (displayPrefs != null && mDozePreference != null) {
+                displayPrefs.removePreference(mDozePreference);
+            }
+        }
+
         mDozeFragement = (PreferenceScreen) findPreference(KEY_DOZE_FRAGMENT);
-        if (!Utils.isDozeAvailable(activity)) {
-            getPreferenceScreen().removePreference(mDozeFragement);
+        if (displayPrefs != null && mDozeFragement != null && !Utils.isDozeAvailable(activity)) {
+            displayPrefs.removePreference(mDozeFragement);
         }
 
         mTapToWake = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);
@@ -361,6 +377,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         final ContentResolver resolver = getContentResolver();
 
+        boolean dozeEnabled = Settings.Secure.getInt(
+                getContentResolver(), Settings.Secure.DOZE_ENABLED, 1) != 0;
+        if (mDozeFragement != null) {
+            mDozeFragement.setSummary(dozeEnabled
+                    ? R.string.summary_doze_enabled : R.string.summary_doze_disabled);
+        }
+
         // Display rotation observer
         resolver.registerContentObserver(
                 Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
@@ -420,6 +443,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (mLiftToWakePreference != null) {
             int value = Settings.Secure.getInt(getContentResolver(), WAKE_GESTURE_ENABLED, 0);
             mLiftToWakePreference.setChecked(value != 0);
+        }
+
+        // Update doze if it is available.
+        if (mDozePreference != null) {
+            int value = Settings.Secure.getInt(getContentResolver(), DOZE_ENABLED,
+                    getActivity().getResources().getBoolean(
+                    com.android.internal.R.bool.config_doze_enabled_by_default) ? 1 : 0);
+            mDozePreference.setChecked(value != 0);
         }
     }
 
@@ -513,6 +544,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), WAKE_GESTURE_ENABLED, value ? 1 : 0);
         }
+        if (preference == mDozePreference) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), DOZE_ENABLED, value ? 1 : 0);
+        }
         return true;
     }
 
@@ -596,6 +631,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     }
                     if (!isLiftToWakeAvailable(context)) {
                         result.add(KEY_LIFT_TO_WAKE);
+                    }
+                    if (!Utils.isDozeAvailable(context)) {
+                        result.add(KEY_DOZE);
                     }
                     if (!Utils.isDozeAvailable(context)) {
                         result.add(KEY_DOZE_FRAGMENT);

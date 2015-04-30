@@ -223,6 +223,11 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             mItems.add(new DozeModeItem(mProfile));
         }
 
+        final Activity activity = getActivity();
+        if (Utils.isDozeAvailable(activity)) {
+            mItems.add(new DozeModeItem(mProfile));
+        }
+
         // app groups
         if (SettingsActivity.showAdvancedPreferences(getActivity())) {
             mItems.add(new Header(getString(R.string.profile_app_group_category_title)));
