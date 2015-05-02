@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">V10.9</string>
+    <string name="temasek_version_default">V11</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Spare parts</string>
@@ -896,5 +896,9 @@
     <!-- Block QS on secure lock screen -->
     <string name="block_on_secure_keyguard_title">Disable on lock screen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lock screen.</string>
+
+    <!-- Instant reboot -->
+    <string name="advanced_reboot_oneclick">One click reboot</string>
+    <string name="advanced_reboot_oneclick_summary">Instantly trigger reboot action</string>
 
 </resources>
