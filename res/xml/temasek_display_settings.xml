@@ -25,10 +25,4 @@
         android:summary="@string/lcd_density_summary"
         android:persistent="false" />
 
-    <!-- Screen and animations -->
-    <PreferenceScreen
-         android:key="screen_and_animations"
-         android:fragment="com.android.settings.temasek.ScreenAndAnimations"
-         android:title="@string/screen_and_animations_title"/>
-
 </PreferenceScreen>

@@ -13,7 +13,7 @@
     <string name="recents_panel_settings">Recents panel settings</string>
     <string name="screen_and_animations_title">Screen and animations</string>
     <string name="display_settings">Display</string>
-    <string name="display_settings_custom_title">Display tweaks</string>
+    <string name="display_settings_custom_title">Density configuration</string>
     <string name="general_options_title">General</string>
 
     <!-- General strings -->
