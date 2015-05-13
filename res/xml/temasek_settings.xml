@@ -43,9 +43,4 @@
          android:fragment="com.android.settings.temasek.RecentsPanelSettings"
          android:title="@string/recents_panel_title"/>
 
-    <!-- Wakelock blocker -->
-    <PreferenceScreen
-        android:key="wakelock_blocker"
-        android:fragment="com.android.settings.temasek.WakeLockBlocker"
-        android:title="@string/wakelock_blocker_title" />
 </PreferenceScreen>
