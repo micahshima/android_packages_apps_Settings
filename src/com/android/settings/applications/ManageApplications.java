@@ -102,9 +102,7 @@ final class CanBeOnSdCardChecker {
     
     boolean check(ApplicationInfo info) {
         boolean canBe = false;
-        if (!PackageHelper.isExternalInstallPossible()) {
-            // Don't even bother checking the other cases, no media is available
-        } else if ((info.flags & ApplicationInfo.FLAG_EXTERNAL_STORAGE) != 0) {
+        if ((info.flags & ApplicationInfo.FLAG_EXTERNAL_STORAGE) != 0) {
             canBe = true;
         } else {
             if ((info.flags & ApplicationInfo.FLAG_SYSTEM) == 0) {
