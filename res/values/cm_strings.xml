@@ -1227,4 +1227,6 @@
     <string name="sim_card_summary_empty">SIM not inserted</string>
 
     <string name="bluetooth_pan_profile_summary_use_for_error">Connection error; is Bluetooth tethering enabled on this device?</string>
+
+    <string name="launcher">Launcher</string>
 </resources>
