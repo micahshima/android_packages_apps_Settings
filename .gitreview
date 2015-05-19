@@ -1,5 +1,0 @@
-[gerrit]
-host=review.cyanogenmod.org
-port=29418
-project=android_packages_apps_Settings.git
-defaultbranch=cm-12.1
