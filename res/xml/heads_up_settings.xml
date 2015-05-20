@@ -19,7 +19,7 @@
     <!-- Heads Up Colors -->
 	<PreferenceScreen
         android:key="heads_up_colors"
-        android:fragment="com.android.settings.bliss.HeadsUpColors"
+        android:fragment="com.android.settings.temasek.HeadsUpColors"
         android:title="@string/heads_up_colors_title"
         android:summary="@string/heads_up_colors_summary" />
 
