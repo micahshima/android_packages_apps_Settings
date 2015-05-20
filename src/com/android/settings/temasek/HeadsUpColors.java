@@ -153,7 +153,7 @@ public class HeadsUpColors extends SettingsPreferenceFragment implements
                     .setTitle(R.string.reset)
                     .setMessage(R.string.dlg_reset_values_message)
                     .setNegativeButton(R.string.cancel, null)
-                    .setNeutralButton(R.string.dlg_reset_android,
+                    .setPositiveButton(R.string.dlg_reset_android,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                              Settings.System.putInt(getOwner().mResolver,
@@ -162,18 +162,6 @@ public class HeadsUpColors extends SettingsPreferenceFragment implements
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.HEADS_UP_TEXT_COLOR,
                                     DEFAULT_TEXT_COLOR);
-                            getOwner().refreshSettings();
-                        }
-                    })
-                    .setPositiveButton(R.string.dlg_reset_bliss,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.HEADS_UP_BG_COLOR,
-                                    0xff000000);
-                            Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.HEADS_UP_TEXT_COLOR,
-                                    0xffffffff);
                             getOwner().refreshSettings();
                         }
                     })
