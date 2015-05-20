@@ -17,7 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Heads Up Colors -->
-	<PreferenceScreen
+    <PreferenceScreen
         android:key="heads_up_colors"
         android:fragment="com.android.settings.temasek.HeadsUpColors"
         android:title="@string/heads_up_colors_title"
