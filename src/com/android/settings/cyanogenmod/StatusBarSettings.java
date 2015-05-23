@@ -301,7 +301,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     input.setText(oldText);
                 }
                 alert.setView(input);
-
                 alert.setPositiveButton(R.string.menu_save, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int whichButton) {
                         String value = input.getText().toString();
@@ -504,24 +503,24 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-                @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                                                                            boolean enabled) {
-                    ArrayList<SearchIndexableResource> result =
-                            new ArrayList<SearchIndexableResource>();
+        new BaseSearchIndexProvider() {
+        @Override
+        public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                    boolean enabled) {
+            ArrayList<SearchIndexableResource> result =
+                new ArrayList<SearchIndexableResource>();
 
-                    SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.status_bar_settings;
-                    result.add(sir);
+            SearchIndexableResource sir = new SearchIndexableResource(context);
+            sir.xmlResId = R.xml.status_bar_settings;
+            result.add(sir);
 
-                    return result;
-                }
+            return result;
+        }
 
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    ArrayList<String> result = new ArrayList<String>();
-                    return result;
-                }
-            };
+        @Override
+        public List<String> getNonIndexableKeys(Context context) {
+            ArrayList<String> result = new ArrayList<String>();
+            return result;
+        }
+    };
 }
