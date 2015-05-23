@@ -146,16 +146,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
         mDPM = (DevicePolicyManager)getSystemService(Context.DEVICE_POLICY_SERVICE);
     }
 
-    private void updateScreenPinningState() {
-        boolean screenPinning = Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCK_TO_APP_ENABLED, 0) != 0;
-        Preference lockPre = getPreferenceScreen().findPreference(KEY_SCREEN_PINNING);
-        if (lockPre != null) {
-            lockPre.setSummary(
-                    getResources().getString(screenPinning  ? R.string.switch_on_text : R.string.switch_off_text));
-        }
-    }
-
     /**
      * Important!
      *
@@ -503,7 +493,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
 
         updateDeviceLockState();
-        updateScreenPinningState();
     }
 
     @Override
