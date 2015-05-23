@@ -774,7 +774,7 @@
     <string name="status_bar_show_clock_second_title">Clock seconds</string>
 
     <!-- Pie control -->
-    <string name="pie_control_title">Pie control</string>
+    <string name="pie_control_title">SlimPIE</string>
     <string name="pie_control_summary">Enable pie on screen navigation</string>
     <string name="pie_control_size">Navigation size</string>
     <string name="pie_control_trigger_positions">Trigger options</string>
