@@ -92,7 +92,7 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
         updateSmartPulldownSummary(smartPulldown);
 
         // Task manager
-        mEnableTaskManager = (SwitchPreference) prefs.findPreference(PREF_ENABLE_TASK_MANAGER);
+        mEnableTaskManager = (SwitchPreference) prefSet.findPreference(PREF_ENABLE_TASK_MANAGER);
         mEnableTaskManager.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
 
