@@ -247,7 +247,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.bliss_display_settings;
+                    sir.xmlResId = R.xml.temasek_display_settings;
                     result.add(sir);
 
                     return result;
