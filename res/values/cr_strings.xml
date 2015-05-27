@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">V11.9</string>
+    <string name="temasek_version_default">V12</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Spare parts</string>
@@ -77,6 +77,7 @@
     <string name="shortcut_action_back">Back</string>
     <string name="shortcut_action_kill">Kill app</string>
     <string name="shortcut_action_lastapp">Last app</string>
+    <string name="shortcut_action_menu_big">Menu Big</string>
     <string name="shortcut_action_notifications">Notifications</string>
     <string name="shortcut_action_qs">Quicksettings panel</string>
     <string name="shortcut_action_torch">Flashlight</string>
@@ -590,7 +591,6 @@
     <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
 
     <!-- Navring targets (enable/disable) -->
-    <string name="navigation_ring_category">Navigation Ring</string>
     <string name="navigation_ring_enable_title">Enable navigation rings</string>
 
     <!-- Heads up touch outside -->
