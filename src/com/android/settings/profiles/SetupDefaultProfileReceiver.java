@@ -7,8 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
 
-import java.util.UUID;
-
 public class SetupDefaultProfileReceiver extends BroadcastReceiver {
 
     @Override
@@ -17,8 +15,7 @@ public class SetupDefaultProfileReceiver extends BroadcastReceiver {
                 Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1) {
             ProfileManager profileManager = (ProfileManager) context
                     .getSystemService(Context.PROFILE_SERVICE);
-            Profile defaultProfile = profileManager.getProfile(
-                    UUID.fromString("d393035d-ea71-4f2a-bdbd-b65f6bf298f1"));
+            Profile defaultProfile = profileManager.getProfile("Default");
             if (defaultProfile != null) {
                 SetupActionsFragment.fillProfileWithCurrentSettings(context, defaultProfile);
                 profileManager.updateProfile(defaultProfile);
