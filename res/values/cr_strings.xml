@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">V11.8</string>
+    <string name="temasek_version_default">V11.9</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Spare parts</string>
@@ -590,6 +590,7 @@
     <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
 
     <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_category">Navigation Ring</string>
     <string name="navigation_ring_enable_title">Enable navigation rings</string>
 
     <!-- Heads up touch outside -->
@@ -983,9 +984,9 @@
     <!-- Status bar expanded header: Custom background color -->
     <string name="background_header_title">Header background color</string>
 
-    <!-- 4G LTE switch -->
-    <string name="show_fourg_title">Show 4G instead of LTE</string>
-    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G.\nChanging this option will trigger SystemUI restart!</string>
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Task Manager</string>
+    <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area.\nChanging this option will trigger SystemUI restart!</string>
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Task Manager</string>
