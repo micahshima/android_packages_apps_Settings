@@ -1635,7 +1635,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                         Settings.Global.ADB_ENABLED, 0);
                 mVerifyAppsOverUsb.setEnabled(false);
                 mVerifyAppsOverUsb.setChecked(false);
-                onPreferenceTreeClick(null, mVerifyAppsOverUsb);
             }
         } else if (preference == mAdbNotify) {
             Settings.Secure.putInt(getActivity().getContentResolver(),
