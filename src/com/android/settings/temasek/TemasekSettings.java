@@ -20,11 +20,6 @@ public class TemasekSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.temasek_settings);
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         return false;
     }
