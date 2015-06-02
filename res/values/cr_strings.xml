@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">V12.1</string>
+    <string name="temasek_version_default">V12.2</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Spare parts</string>
@@ -567,11 +567,23 @@
     <string name="heads_up_colors_title">Custom Colors</string>
     <string name="heads_up_colors_summary">Customize heads up text and background color</string>
 
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Snooze timer</string>
+    <string name="heads_up_snooze_summary">Swiping up on the heads up notification will snooze it for <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_snooze_1min">1 minute</string>
+    <string name="heads_up_snooze_3min">3 minutes</string>
+    <string name="heads_up_snooze_5min">5 minutes</string>
+    <string name="heads_up_snooze_10min">10 minutes</string>
+    <string name="heads_up_snooze_15min">15 minutes</string>
+    <string name="heads_up_snooze_20min">20 minutes</string>
+
     <!-- Captive Portal -->
     <string name="captive_portal_detection">Captive portal detection</string>
     <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
 
     <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_category">Navigation Ring</string>
     <string name="navigation_ring_enable_title">Enable navigation rings</string>
 
     <!-- Heads up touch outside -->
@@ -975,5 +987,31 @@
     <string name="status_bar_power_menu_off">Disabled</string>
     <string name="status_bar_power_menu_action_screen_off">Screen off - Power menu</string>
     <string name="status_bar_power_menu_action_dialog">Power menu - Screen off</string>
+
+    <!-- Disable torch when screen goes off -->
+    <string name="disable_torch_screen_off_title">Disable torch on screen off</string>
+    <string name="disable_torch_screen_off_delay_title">Delay</string>
+    <string name="torch_screen_off_one_second">1 second</string>
+    <string name="torch_screen_off_ten_second">10 seconds (default)</string>
+    <string name="torch_screen_off_thirty_second">30 seconds</string>
+    <string name="torch_screen_off_one_minute">1 minute</string>
+    <string name="torch_screen_off_five_minutes">5 minutes</string>
+    <string name="torch_screen_off_ten_minutes">10 minutes</string>
+
+    <!-- Custom Over scroll Settings -->
+    <string name="ui_overscroll_title">Over scrolling effects</string>
+    <string name="overscroll_glow_title">Over scroll Color</string>
+    <string name="edge_effect_title">Edge Glow effect</string>
+    <string name="bounce_effect_title">Bounce effect</string>
+    <string name="none_effect_title">None</string>
+    <string name="extra_heavy_title">Extra Heavy</string>
+    <string name="heavy_title">Heavy</string>
+    <string name="medium_title">Medium</string>
+    <string name="light_title">Light</string>
+    <string name="extra_light_title">Extra Light</string>
+    <string name="overscroll_title">Over scrolling effect</string>
+    <string name="overscroll_summary">Choose how scrollable objects look when they overshoot</string>
+    <string name="overscroll_weight_title">Over scrolling weight</string>
+    <string name="overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
 </resources>
